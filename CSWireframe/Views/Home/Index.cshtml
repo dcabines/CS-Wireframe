@@ -2,4 +2,78 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Hey</h2>
+<form class="form-inline search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search Term" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-sm-2">
+        <div class="regristration-info">
+            <img src="http://placehold.it/200x200" class="img-thumbnail"><br />
+            123456<br/>
+            Bob Dobbs<br />
+            bdobbs@gmail.com<br />
+            123-456-7890<br/>
+            <a href="http://google.com" target="_blank">Personal Page</a><br />
+            <strong>MHS Date:</strong><br />
+            @DateTime.Now.ToShortDateString()<br />
+            <strong>Brokerage:</strong><br />
+            Bob's Realestate<br/>
+            <strong>Broker Email:</strong><br />
+            bdobbs@gmail.com<br />
+            <strong>Association:</strong><br />
+            Horry County Association of Realtors
+        </div>
+        <button type="submit" class="btn btn-default pull-right">Edit</button>
+    </div>
+
+    <div class="col-sm-10">
+        <div class="panel panel-default main-area">
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+                    <li><a href="#idx" data-toggle="tab">IDX</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="basic">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <strong>Zip Codes</strong>
+                                <ul class="list-unstyled">
+                                    <li>29579</li>
+                                    <li>12345</li>
+                                    <li>32225</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <strong>Active Products</strong>
+                                <ul class="list-unstyled">
+                                    <li>IDX - @DateTime.Now.ToShortDateString()</li>
+                                    <li>PE - @DateTime.Now.ToShortDateString()</li>
+                                    <li>DS - @DateTime.Now.ToShortDateString()</li>
+                                    <li>ADV - @DateTime.Now.ToShortDateString()</li>
+                                    <li>TKS - @DateTime.Now.ToShortDateString()</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <strong>Canceled Products</strong>
+                                <ul class="list-unstyled">
+                                    <li>IDX - @DateTime.Now.ToShortDateString()</li>
+                                    <li>PE - @DateTime.Now.ToShortDateString()</li>
+                                    <li>TKS - @DateTime.Now.ToShortDateString()</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="idx">
+                        THIS IS THE IDX
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

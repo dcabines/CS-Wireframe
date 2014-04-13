@@ -8,11 +8,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>This is my title</title>
-    @Styles.Render("~/bundles/Scripts/base")
+    @Styles.Render("~/bundles/Styles/base")
 </head>
 <body>
-    @RenderBody()
+    <div class="container">
+        @RenderBody()
+    </div>
 
-    @Scripts.Render("~/bundles/Styles/base")
+    @Scripts.Render("~/bundles/Scripts/base")
 </body>
 </html>

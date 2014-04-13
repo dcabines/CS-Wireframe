@@ -10,7 +10,7 @@ using System.Web.Routing;
 namespace CSWireframe {
     public class MvcApplication : System.Web.HttpApplication {
         protected void Application_Start() {
-            BundleTable.EnableOptimizations = true;
+            //BundleTable.EnableOptimizations = true;
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
