@@ -135,6 +135,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\knockout-3.1.0.js" />
+    <Content Include="Scripts\viewModel.js" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />
@@ -166,6 +167,21 @@
     <Content Include="Content\glyphicons-halflings-regular.eot" />
     <Content Include="Content\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Search.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\RegistrationInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Tabs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Basic.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\IDX.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

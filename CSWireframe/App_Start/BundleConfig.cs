@@ -7,7 +7,8 @@ namespace CSWireframe {
             bundles.Add(new ScriptBundle("~/bundles/Scripts/base").Include(
                         "~/Scripts/jquery-2.1.0.js",
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/knockout-3.1.0.js"));
+                        "~/Scripts/knockout-3.1.0.js",
+                        "~/Scripts/viewModel.js"));
 
             bundles.Add(new StyleBundle("~/bundles/Styles/base").Include(
                         "~/Styles/bootstrap.css",
