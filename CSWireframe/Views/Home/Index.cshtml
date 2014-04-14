@@ -1,37 +1,57 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Henry Wadsworth Longfellow";
 }
 
-<form class="form-inline search">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search Term" />
-        <button type="submit" class="btn btn-primary">Search</button>
+<div class="row">
+    <div class="col-sm-8">
+        <h2>@ViewBag.Title</h2>
     </div>
-</form>
+    <div class="col-sm-4">
+        <form class="form-inline search clearfix">
+            <div class="form-group pull-right">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Search Term" />
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-sm-2">
         <div class="regristration-info">
             <div class="form-group">
-                <img src="http://placehold.it/200x200" class="img-thumbnail"><br />
-                123456<br />
-                Bob Dobbs<br />
-                bdobbs@gmail.com<br />
-                123-456-7890<br />
-                <a href="http://google.com" target="_blank">Personal Page</a>
+                <p>
+                    <img src="http://placehold.it/200x200" class="img-thumbnail">
+                </p>
+                <p>
+                    123456<br />
+                    (123) 456-7890<br />
+                    <a href="mailto:bdobbs@gmail.com">bdobbs@gmail.com</a><br />
+                    <a href="http://google.com" target="_blank">Facebook Profile</a>
+                </p>
             </div>
+
             <div class="form-group">
-                <label>MHS Date:</label><br />
+                <strong>MHS Date:</strong><br />
                 @DateTime.Now.ToShortDateString()
             </div>
+
             <div class="form-group">
                 <strong>Brokerage:</strong><br />
                 Bob's Realestate
             </div>
+
             <div class="form-group">
                 <strong>Broker Email:</strong><br />
                 bdobbs@gmail.com
             </div>
+
             <div class="form-group">
                 <strong>Association:</strong><br />
                 Horry County Association of Realtors
@@ -51,16 +71,17 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="basic">
                         <div class="row">
-                            <div class="col-sm-4">
-                                <strong>Zip Codes</strong>
+                            <div class="col-sm-4 text-center">
+                                <h4>Zip Codes</h4>
                                 <ul class="list-unstyled">
                                     <li>29579</li>
                                     <li>12345</li>
                                     <li>32225</li>
                                 </ul>
                             </div>
-                            <div class="col-sm-4">
-                                <strong>Active Products</strong>
+
+                            <div class="col-sm-4 text-center">
+                                <h4>Active Products</h4>
                                 <ul class="list-unstyled">
                                     <li>IDX - @DateTime.Now.ToShortDateString()</li>
                                     <li>PE - @DateTime.Now.ToShortDateString()</li>
@@ -69,8 +90,9 @@
                                     <li>TKS - @DateTime.Now.ToShortDateString()</li>
                                 </ul>
                             </div>
-                            <div class="col-sm-4">
-                                <strong>Canceled Products</strong>
+
+                            <div class="col-sm-4 text-center">
+                                <h4>Canceled Products</h4>
                                 <ul class="list-unstyled">
                                     <li>IDX - @DateTime.Now.ToShortDateString()</li>
                                     <li>PE - @DateTime.Now.ToShortDateString()</li>
@@ -78,7 +100,82 @@
                                 </ul>
                             </div>
                         </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Heading</th>
+                                            <th>Heading</th>
+                                            <th>Heading</th>
+                                            <th>Heading</th>
+                                            <th>Heading</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="tab-pane" id="idx">
                         THIS IS THE IDX
                     </div>
