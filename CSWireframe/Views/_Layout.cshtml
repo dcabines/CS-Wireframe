@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>CS Wireframe - @ViewBag.Title</title>
     @Styles.Render("~/bundles/Styles/base")
+    @RenderSection("Head", false)
 </head>
 <body>
     <div class="container">
@@ -16,5 +17,6 @@
     </div>
 
     @Scripts.Render("~/bundles/Scripts/base")
+    @RenderSection("Scripts", false)
 </body>
 </html>

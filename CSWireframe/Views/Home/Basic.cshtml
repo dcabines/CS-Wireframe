@@ -1,0 +1,55 @@
+﻿<div class="row">
+    <div class="col-xs-4 text-center">
+        <h4>Zip Codes</h4>
+        <ul class="list-unstyled">
+            <li>29579</li>
+            <li>12345</li>
+            <li>32225</li>
+        </ul>
+    </div>
+
+    <div class="col-xs-4 text-center">
+        <h4>Active Products</h4>
+        <ul class="list-unstyled">
+            <li>IDX - @DateTime.Now.ToShortDateString()</li>
+            <li>PE - @DateTime.Now.ToShortDateString()</li>
+            <li>DS - @DateTime.Now.ToShortDateString()</li>
+            <li>ADV - @DateTime.Now.ToShortDateString()</li>
+            <li>TKS - @DateTime.Now.ToShortDateString()</li>
+        </ul>
+    </div>
+
+    <div class="col-xs-4 text-center">
+        <h4>Canceled Products</h4>
+        <ul class="list-unstyled">
+            <li>IDX - @DateTime.Now.ToShortDateString()</li>
+            <li>PE - @DateTime.Now.ToShortDateString()</li>
+            <li>TKS - @DateTime.Now.ToShortDateString()</li>
+        </ul>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                    <th>Heading</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: tableData">
+                <tr>
+                    <td data-bind="text: colOne"></td>
+                    <td data-bind="text: colTwo"></td>
+                    <td data-bind="text: colThree"></td>
+                    <td data-bind="text: colFour"></td>
+                    <td data-bind="text: colFive"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

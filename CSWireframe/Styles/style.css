@@ -1,11 +1,17 @@
-﻿.search{
+﻿.search {
     padding: 10px 0;
 }
 
-.main-area{
-    min-height:500px;
+.main-area {
+    min-height: 500px;
 }
 
-.regristration-info{
-    margin-bottom: 10px;
+.regristration-info,
+.contact-info,
+.contact-info img {
+    margin-bottom: 15px;
 }
+
+    .contact-info span {
+        display: block;
+    }

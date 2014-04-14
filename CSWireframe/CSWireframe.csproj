@@ -132,10 +132,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\BasicInfo.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\knockout-3.1.0.js" />
-    <Content Include="Scripts\viewModel.js" />
+    <Content Include="Scripts\RegistrationInfo.js" />
+    <Content Include="Scripts\RegistrationInfoModel.js" />
+    <Content Include="Scripts\TableModel.js" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />

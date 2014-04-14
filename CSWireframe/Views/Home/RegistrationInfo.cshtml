@@ -1,34 +1,60 @@
-﻿<div class="registration-info">
-    <div class="form-group">
-        <p>
-            <img src="http://placehold.it/200x200" class="img-thumbnail">
-        </p>
-        <p>
-            123456<br />
-            (123) 456-7890<br />
-            <a href="mailto:bdobbs@gmail.com">bdobbs@gmail.com</a><br />
-            <a href="http://google.com" target="_blank">Facebook Profile</a>
-        </p>
+﻿<div class="registration-info" style="display: none;">
+    <div class="contact-info">
+        <img class="img-thumbnail" data-bind="attr: { src: avatar }, visible: isNotEditing">
+        <div class="form-group" data-bind="visible: isEditing">
+            <label>Avatar:</label>
+            <input type="text" class="form-control" data-bind="value: avatar" />
+        </div>
+
+        <div class="form-group" data-bind="visible: isEditing">
+            <label>Name:</label>
+            <input type="text" class="form-control" data-bind="value: name" />
+        </div>
+
+        <span data-bind="text: id, visible: isNotEditing"></span>
+
+        <span data-bind="text: phone, visible: isNotEditing"></span>
+        <div class="form-group" data-bind="visible: isEditing">
+            <label>Phone:</label>
+            <input type="text" class="form-control" data-bind="value: phone" />
+        </div>
+
+        <a data-bind="text: email, attr: { href: 'mailto:' + email() }, visible: isNotEditing"></a>
+        <div class="form-group" data-bind="visible: isEditing">
+            <label>Email:</label>
+            <input type="text" class="form-control" data-bind="value: email" />
+        </div>
+
+        <a data-bind="attr: { href: profile, target: '_blank' }, visible: isNotEditing">Facebook Profile</a>
+        <div class="form-group" data-bind="visible: isEditing">
+            <label>Profile:</label>
+            <input type="text" class="form-control" data-bind="value: profile" />
+        </div>
     </div>
 
     <div class="form-group">
         <strong>MHS Date:</strong><br />
-        @DateTime.Now.ToShortDateString()
+        <span data-bind="text: mhs, visible: isNotEditing"></span>
+        <input type="text" class="form-control" data-bind="value: mhs, visible: isEditing" />
     </div>
 
     <div class="form-group">
         <strong>Brokerage:</strong><br />
-        Bob's Realestate
+        <span data-bind="text: brokerage, visible: isNotEditing"></span>
+        <input type="text" class="form-control" data-bind="value: brokerage, visible: isEditing" />
     </div>
 
     <div class="form-group">
         <strong>Broker Email:</strong><br />
-        bdobbs@gmail.com
+        <span data-bind="text: broker, visible: isNotEditing"></span>
+        <input type="text" class="form-control" data-bind="value: broker, visible: isEditing" />
     </div>
 
     <div class="form-group">
         <strong>Association:</strong><br />
-        Horry County Association of Realtors
+        <span data-bind="text: association, visible: isNotEditing"></span>
+        <input type="text" class="form-control" data-bind="value: association, visible: isEditing" />
     </div>
+
+    <button type="button" class="btn btn-default pull-right" data-bind="click: toggleEditing, text: isEditing() ? 'Save': 'Edit'"></button>
 </div>
-<button type="submit" class="btn btn-default pull-right">Edit</button>
