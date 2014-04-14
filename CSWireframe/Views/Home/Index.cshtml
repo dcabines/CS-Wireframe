@@ -12,20 +12,30 @@
 <div class="row">
     <div class="col-sm-2">
         <div class="regristration-info">
-            <img src="http://placehold.it/200x200" class="img-thumbnail"><br />
-            123456<br/>
-            Bob Dobbs<br />
-            bdobbs@gmail.com<br />
-            123-456-7890<br/>
-            <a href="http://google.com" target="_blank">Personal Page</a><br />
-            <strong>MHS Date:</strong><br />
-            @DateTime.Now.ToShortDateString()<br />
-            <strong>Brokerage:</strong><br />
-            Bob's Realestate<br/>
-            <strong>Broker Email:</strong><br />
-            bdobbs@gmail.com<br />
-            <strong>Association:</strong><br />
-            Horry County Association of Realtors
+            <div class="form-group">
+                <img src="http://placehold.it/200x200" class="img-thumbnail"><br />
+                123456<br />
+                Bob Dobbs<br />
+                bdobbs@gmail.com<br />
+                123-456-7890<br />
+                <a href="http://google.com" target="_blank">Personal Page</a>
+            </div>
+            <div class="form-group">
+                <label>MHS Date:</label><br />
+                @DateTime.Now.ToShortDateString()
+            </div>
+            <div class="form-group">
+                <strong>Brokerage:</strong><br />
+                Bob's Realestate
+            </div>
+            <div class="form-group">
+                <strong>Broker Email:</strong><br />
+                bdobbs@gmail.com
+            </div>
+            <div class="form-group">
+                <strong>Association:</strong><br />
+                Horry County Association of Realtors
+            </div>
         </div>
         <button type="submit" class="btn btn-default pull-right">Edit</button>
     </div>
