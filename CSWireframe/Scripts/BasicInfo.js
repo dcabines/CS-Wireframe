@@ -2,11 +2,14 @@
 
 for (var i = 0; i < 10; i++) {
     data.push({
-        colOne: 'Data',
-        colTwo: 'Data',
-        colThree: 'Data',
-        colFour: 'Data',
-        colFive: 'Data'
+        colOne: '123456789' + i,
+        colTwo: 'Bob Dobbs (' + i + ')',
+        colThree: '123456789' + i,
+        colFour: '123456789' + i,
+        colFive: '123456789' + i,
+        colSix: '123456789' + i,
+        colSeven: '123456789' + i,
+        colEight: '123456789' + i
     });
 }
 

@@ -1,6 +1,6 @@
 ﻿var data = {
     name: 'Henry Wadsworth Longfellow',
-    avatar: 'http://placehold.it/200x200',
+    avatar: 'http://placehold.it/300x300',
     id: '123456',
     phone: '(123) 456-7890',
     email: 'bdobbs@gmail.com',
