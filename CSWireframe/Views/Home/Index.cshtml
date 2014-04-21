@@ -29,6 +29,7 @@
             var model = new app.ViewModel(data);
             ko.applyBindings(model);
             $(document).attr('title', 'CS Wireframe - ' + data.registrationInfo.name);
+            $('.container-fluid').fadeIn('fast');
         });
     });
 </script>
