@@ -1,36 +1,34 @@
 ﻿<div class="row">
     <div class="col-xs-2 text-center">
         <h4>Active Products</h4>
-        <ul class="list-unstyled">
-            <li>IDX - @DateTime.Now.ToShortDateString()</li>
-            <li>PE - @DateTime.Now.ToShortDateString()</li>
-            <li>DS - @DateTime.Now.ToShortDateString()</li>
-            <li>ADV - @DateTime.Now.ToShortDateString()</li>
-            <li>TKS - @DateTime.Now.ToShortDateString()</li>
+        <ul class="list-unstyled" data-bind="foreach: active">
+            <li>
+                <span data-bind="text: name"></span> -
+                <span data-bind="text: date"></span>
+            </li>
         </ul>
     </div>
 
     <div class="col-xs-2 text-center">
         <h4>Canceled Products</h4>
-        <ul class="list-unstyled">
-            <li>IDX - @DateTime.Now.ToShortDateString()</li>
-            <li>PE - @DateTime.Now.ToShortDateString()</li>
-            <li>TKS - @DateTime.Now.ToShortDateString()</li>
+        <ul class="list-unstyled" data-bind="foreach: canceled">
+            <li>
+                <span data-bind="text: name"></span> -
+                <span data-bind="text: date"></span>
+            </li>
         </ul>
     </div>
 
     <div class="col-xs-2 text-center">
         <h4>Zip Codes</h4>
-        <ul class="list-unstyled">
-            <li>29579</li>
-            <li>12345</li>
-            <li>32225</li>
+        <ul class="list-unstyled" data-bind="foreach: zipCodes">
+            <li data-bind="text: $data"></li>
         </ul>
     </div>
 
     <div class="col-xs-2">
         <h4>Video</h4>
-        <a href="www.google.com">www.google.com</a>
+        <a data-bind="attr: { href: video, target: '_blank' }, text: video"></a>
     </div>
 
     <div class="col-xs-2 col-xs-offset-2">
@@ -52,7 +50,6 @@
     </div>
 </div>
 
-<hr />
 <div class="row">
     <div class="col-xs-12">
         <table class="table table-striped">
@@ -68,16 +65,16 @@
                     <th>Access Token</th>
                 </tr>
             </thead>
-            <tbody data-bind="foreach: tableData">
+            <tbody data-bind="foreach: fbPages">
                 <tr>
-                    <td data-bind="text: colOne"></td>
-                    <td data-bind="text: colTwo"></td>
-                    <td data-bind="text: colThree"></td>
-                    <td data-bind="text: colFour"></td>
-                    <td data-bind="text: colFive"></td>
-                    <td data-bind="text: colSix"></td>
-                    <td data-bind="text: colSeven"></td>
-                    <td data-bind="text: colEight"></td>
+                    <td data-bind="text: fbid"></td>
+                    <td data-bind="text: name"></td>
+                    <td data-bind="text: readAssoc"></td>
+                    <td data-bind="text: profile"></td>
+                    <td data-bind="text: idx"></td>
+                    <td data-bind="text: feature"></td>
+                    <td data-bind="text: ds"></td>
+                    <td data-bind="text: accessToken"></td>
                 </tr>
             </tbody>
         </table>

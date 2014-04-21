@@ -5,11 +5,16 @@ namespace CSWireframe {
     public class BundleConfig {
         public static void RegisterBundles(BundleCollection bundles) {
             bundles.Add(new ScriptBundle("~/bundles/Scripts/base").Include(
-                        "~/Scripts/jquery-2.1.0.js",
-                        "~/Scripts/bootstrap.js",
-                        "~/Scripts/knockout-3.1.0.js",
-                        "~/Scripts/RegistrationInfoModel.js",
-                        "~/Scripts/TableModel.js"));
+                        "~/Scripts/libs/jquery-2.1.0.js",
+                        "~/Scripts/libs/bootstrap.js",
+                        "~/Scripts/libs/knockout-3.1.0.js",
+
+                        "~/Scripts/app.js",
+
+                        "~/Scripts/models/FBPage.js",
+                        "~/Scripts/models/RegistrationInfo.js",
+                        "~/Scripts/models/BasicInfo.js",
+                        "~/Scripts/models/ViewModel.js"));
 
             bundles.Add(new StyleBundle("~/bundles/Styles/base").Include(
                         "~/Styles/bootstrap.css",

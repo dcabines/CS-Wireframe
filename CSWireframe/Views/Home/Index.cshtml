@@ -1,6 +1,6 @@
 ﻿<div class="row">
     <div class="col-xs-8">
-        <h2 class="customer-name"></h2>
+        <h2 data-bind="text: name"></h2>
     </div>
 
     <div class="col-xs-4">
@@ -9,7 +9,7 @@
 </div>
 
 <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-2" data-bind="with: registrationInfo">
         @Html.Partial("RegistrationInfo")
     </div>
 
@@ -23,6 +23,13 @@
 </div>
 
 @section Scripts{
-<script src="@Url.Content("~/Scripts/RegistrationInfo.js")"></script>
-<script src="@Url.Content("~/Scripts/BasicInfo.js")"></script>
+<script>
+    $(function () {
+        $.get('/api/data', function (data) {
+            var model = new app.ViewModel(data);
+            ko.applyBindings(model);
+            $(document).attr('title', 'CS Wireframe - ' + data.registrationInfo.name);
+        });
+    });
+</script>
 }

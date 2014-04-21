@@ -1,4 +1,4 @@
-﻿<div class="registration-info" style="display: none;">
+﻿<div class="registration-info">
     <div class="contact-info">
         <img class="img-thumbnail" data-bind="attr: { src: avatar }, visible: isNotEditing">
         <div class="form-group" data-bind="visible: isEditing">
@@ -34,13 +34,13 @@
 
     <div class="form-group" data-bind="visible: isNotEditing">
         <strong>Read Score:</strong><br />
-        <span data-bind="text: readScore"></span>/10
+        <span data-bind="text: readScore"></span> / 10
     </div>
 
     <div class="form-group">
         <strong>App Installed:</strong><br />
-        <span data-bind="text: mhs, visible: isNotEditing"></span>
-        <input type="text" class="form-control" data-bind="value: mhs, visible: isEditing" />
+        <span data-bind="text: installDate, visible: isNotEditing"></span>
+        <input type="text" class="form-control" data-bind="value: installDate, visible: isEditing" />
     </div>
 
     <div class="form-group">
