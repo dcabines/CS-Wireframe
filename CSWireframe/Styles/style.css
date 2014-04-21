@@ -1,4 +1,4 @@
-﻿body, html{
+﻿body, html {
     background-color: #f9f9f9;
     min-width: 1100px;
 }
@@ -17,6 +17,16 @@
     margin-bottom: 15px;
 }
 
-    .contact-info span {
+    .contact-info span,
+    .contact-info a {
         display: block;
     }
+
+.brokerage-logo {
+    margin-right: 10px;
+}
+
+#basic button,
+#page-engage button {
+    margin-top: 10px;
+}

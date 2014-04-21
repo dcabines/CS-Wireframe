@@ -8,7 +8,9 @@
     mhs: '4/14/2014',
     brokerage: 'Bob\'s Realestate',
     broker: 'bdobbs@gmail.com',
-    association: 'Horry County Association of Realtors'
+    association: 'Horry County Association of Realtors',
+    readScore: 2,
+    brokerageLogo: 'http://placehold.it/60x60'
 };
 
 var $container = $('.registration-info');

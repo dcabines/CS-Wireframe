@@ -9,6 +9,9 @@
     this.brokerage = ko.observable(data.brokerage);
     this.broker = ko.observable(data.broker);
     this.association = ko.observable(data.association);
+    this.readScore = ko.observable(data.readScore);
+    this.brokerageLogo = ko.observable(data.brokerageLogo);
+    this.aboutMe = ko.observable(data.aboutMe);
 
     this.isEditing = ko.observable(false);
 

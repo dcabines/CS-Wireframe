@@ -10,6 +10,8 @@
 };
 
 var TableData = function (data) {
+    this.aboutMe = ko.observable(data.aboutMe || '');
+    this.myServices = ko.observable(data.myServices || '');
     this.tableData = ko.utils.arrayMap(data, function (row) {
         return new TableRow(row);
     });

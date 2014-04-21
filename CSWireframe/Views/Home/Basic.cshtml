@@ -1,14 +1,5 @@
 ﻿<div class="row">
-    <div class="col-xs-4 text-center">
-        <h4>Zip Codes</h4>
-        <ul class="list-unstyled">
-            <li>29579</li>
-            <li>12345</li>
-            <li>32225</li>
-        </ul>
-    </div>
-
-    <div class="col-xs-4 text-center">
+    <div class="col-xs-2 text-center">
         <h4>Active Products</h4>
         <ul class="list-unstyled">
             <li>IDX - @DateTime.Now.ToShortDateString()</li>
@@ -19,7 +10,7 @@
         </ul>
     </div>
 
-    <div class="col-xs-4 text-center">
+    <div class="col-xs-2 text-center">
         <h4>Canceled Products</h4>
         <ul class="list-unstyled">
             <li>IDX - @DateTime.Now.ToShortDateString()</li>
@@ -27,7 +18,40 @@
             <li>TKS - @DateTime.Now.ToShortDateString()</li>
         </ul>
     </div>
+
+    <div class="col-xs-2 text-center">
+        <h4>Zip Codes</h4>
+        <ul class="list-unstyled">
+            <li>29579</li>
+            <li>12345</li>
+            <li>32225</li>
+        </ul>
+    </div>
+
+    <div class="col-xs-2">
+        <h4>Video</h4>
+        <a href="www.google.com">www.google.com</a>
+    </div>
+
+    <div class="col-xs-2 col-xs-offset-2">
+        <button type="button" class="btn btn-default pull-right">Edit</button>
+    </div>
 </div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>About Me</h4>
+        <p data-bind="text: aboutMe"></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>My Services</h4>
+        <p data-bind="text: myServices"></p>
+    </div>
+</div>
+
 <hr />
 <div class="row">
     <div class="col-xs-12">
@@ -36,7 +60,7 @@
                 <tr>
                     <th>FB Page ID</th>
                     <th>Name</th>
-                    <th>Read Ass</th>
+                    <th>Read Assoc</th>
                     <th>Profile</th>
                     <th>IDX</th>
                     <th>Feature</th>

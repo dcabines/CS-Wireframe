@@ -32,13 +32,19 @@
         </div>
     </div>
 
+    <div class="form-group" data-bind="visible: isNotEditing">
+        <strong>Read Score:</strong><br />
+        <span data-bind="text: readScore"></span>/10
+    </div>
+
     <div class="form-group">
-        <strong>MHS Date:</strong><br />
+        <strong>App Installed:</strong><br />
         <span data-bind="text: mhs, visible: isNotEditing"></span>
         <input type="text" class="form-control" data-bind="value: mhs, visible: isEditing" />
     </div>
 
     <div class="form-group">
+        <img class="img-thumbnail pull-right brokerage-logo" data-bind="attr: { src: brokerageLogo }, visible: isNotEditing">
         <strong>Brokerage:</strong><br />
         <span data-bind="text: brokerage, visible: isNotEditing"></span>
         <input type="text" class="form-control" data-bind="value: brokerage, visible: isEditing" />
