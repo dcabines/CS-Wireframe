@@ -67,8 +67,10 @@
             </thead>
             <tbody data-bind="foreach: fbPages">
                 <tr>
-                    <td data-bind="text: fbid"></td>
-                    <td data-bind="text: name"></td>
+                    <td data-bind="text: fbId"></td>
+                    <td>
+                        <a data-bind="text: name, attr: { href: 'http://www.facebook.com/' + name(), target: '_blank' }"></a>
+                    </td>
                     <td data-bind="text: readAssoc"></td>
                     <td data-bind="text: profile"></td>
                     <td data-bind="text: idx"></td>

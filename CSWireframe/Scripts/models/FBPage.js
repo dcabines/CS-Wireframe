@@ -1,5 +1,5 @@
 ﻿app.FBPage = function (data) {
-    this.fbid = ko.observable(data.fbid);
+    this.fbId = ko.observable(data.fbId);
     this.name = ko.observable(data.name);
     this.readAssoc = ko.observable(data.readAssoc);
     this.profile = ko.observable(data.profile);
